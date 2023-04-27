@@ -34,12 +34,21 @@ with open("mylife.txt", "w") as file:
     while not add_lines or add_lines[0].lower() not in ['y', 'n']:
             add_lines=input(str("Invalid input, please only enter 'y', or 'n'"))
 
-    #Allows user to input another line if 'y' is entered
+    # Allows user to input another line if 'y' is entered
         while add_lines.lower() == 'y':
             line = input(str("Enter line: "))
             file.write(line + "\n")
             add_lines = input(str("Are there more lines", user_name, "?"))
 
-    #Ends the program if 'n' is entered
+    # Ends the program if 'n' is entered
             if add_lines.lower() == 'n':
                 break    
+
+des = pyfiglet.figlet_format("You can find what you've entered in the mylife.txt file", font = "digital")
+print(des)
+
+r = Figlet(font = "banner3-d")
+print(colored(r.renderText('Thank you!'), 'red'))
+
+# Call the method to run the code
+write_to_file()
