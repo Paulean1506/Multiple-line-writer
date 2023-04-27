@@ -10,3 +10,7 @@ from termcolor import colored
 from pyfiglet import Figlet
 f = Figlet(font = "digital")
 print(colored(f.renderText('Oh, Hello there!'), 'yellow'))
+
+# Ask for the name of the user
+user_name = input("\033[95mMay I know your name? \033[0m")
+print("\n\033[94mThank you", user_name,  "enjoy the program!\n")
