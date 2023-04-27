@@ -18,8 +18,8 @@ print("\n\033[94mThank you", user_name,  "enjoy the program!\n")
 # Define write_to_file
 def write_to_file():
 
-# Open mylife.txt in write mode
-with open("mylife.txt", "w") as file:
+    # Open mylife.txt in write mode
+    with open("mylife.txt", "w") as file:
 
     # Ask user for input
     line = input(str("\033[95mEnter line: "))
