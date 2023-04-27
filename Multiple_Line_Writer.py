@@ -39,3 +39,7 @@ with open("mylife.txt", "w") as file:
             line = input(str("Enter line: "))
             file.write(line + "\n")
             add_lines = input(str("Are there more lines", user_name, "?"))
+
+    #Ends the program if 'n' is entered
+            if add_lines.lower() == 'n':
+                break    
