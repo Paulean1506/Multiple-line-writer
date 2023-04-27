@@ -42,6 +42,7 @@ def write_to_file():
 
     # Ends the program if 'n' is entered
             if add_lines.lower() == 'n':
+                print("Hope you enjoyed this little activity<3!")
                 print("")
                 break    
 
