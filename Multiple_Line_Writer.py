@@ -20,3 +20,6 @@ def write_to_file():
 
 # Open mylife.txt in write mode
 with open("mylife.txt", "w") as file:
+
+    # Ask user for input
+    line = input(str("\033[95mEnter line: "))
