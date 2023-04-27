@@ -33,3 +33,9 @@ with open("mylife.txt", "w") as file:
     # Prompts user to only enter 'y' and 'n'
     while not add_lines or add_lines[0].lower() not in ['y', 'n']:
             add_lines=input(str("Invalid input, please only enter 'y', or 'n'"))
+
+    #Allows user to input another line if 'y' is entered
+        while add_lines.lower() == 'y':
+            line = input(str("Enter line: "))
+            file.write(line + "\n")
+            add_lines = input(str("Are there more lines", user_name, "?"))
