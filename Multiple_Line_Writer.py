@@ -23,3 +23,6 @@ with open("mylife.txt", "w") as file:
 
     # Ask user for input
     line = input(str("\033[95mEnter line: "))
+
+    #Writes the input into the file
+    file.write(line + "\n")
