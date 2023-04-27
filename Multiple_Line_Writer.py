@@ -42,6 +42,7 @@ def write_to_file():
 
     # Ends the program if 'n' is entered
             if add_lines.lower() == 'n':
+                print("")
                 break    
 
 des = pyfiglet.figlet_format("You can find what you've entered in the mylife.txt file", font = "digital")
